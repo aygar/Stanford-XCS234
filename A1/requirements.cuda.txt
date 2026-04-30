@@ -1,0 +1,5 @@
+--find-links https://download.pytorch.org/whl/torch/
+torch==2.11.0+cu126
+
+cmake==4.3.1; sys_platform != "win32"
+wget==3.2; sys_platform != "win32"
