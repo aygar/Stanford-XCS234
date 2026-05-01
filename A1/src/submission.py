@@ -191,12 +191,12 @@ def value_iteration(R, T, gamma, tol=1e-3):
 if __name__ == "__main__":
     SEED = 1234
 
-    RIVER_CURRENT = 'WEAK'
+    RIVER_CURRENT = 'STRONG'
     assert RIVER_CURRENT in ['WEAK', 'MEDIUM', 'STRONG']
     env = RiverSwim(RIVER_CURRENT, SEED)
 
     R, T = env.get_model()
-    discount_factor = 0.99
+    discount_factor = 0.92
 
     print("\n" + "-" * 25 + "\nBeginning Policy Iteration\n" + "-" * 25)
 
